@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>EnemyEvents</name>
+    <events>
+        <event-block sid="2028682308191807">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="3570941615112763" type="EnemySnail">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="7224239823917704" type="EnemySnail">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="9350170940873075" type="EnemySnail">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1854437354408535">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1845998817545882" type="EnemySnail">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="1095398966025347" type="EnemySnail">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="4407285441467808" type="EnemySnail">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2018662543889213">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2211809823071035" type="EnemySnail">
+                    <param id="0" name="Object">Waypoint</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7574230564636646">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="4419685940765091" type="EnemySnail">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="5786905234342485" type="EnemySnail">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2044627341109287">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="8391259811329011" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="7867314405768927" type="EnemySnail">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>

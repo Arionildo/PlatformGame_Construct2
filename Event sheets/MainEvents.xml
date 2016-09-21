@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainEvents</name>
+    <events>
+        <variable constant="0" name="Coins" sid="8782828615192202" static="0" type="number">0</variable>
+        <include>PlayerEvents</include>
+        <include>EnemyEvents</include>
+        <event-block sid="3542662667863358">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9299095274753943" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4532438027336104" type="Audio">
+                    <param id="0" name="Audio file">Music1</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7449734348428503">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="9353833626208563" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="2622925374702715" type="Text">
+                    <param id="0" name="Text">&quot;COINS: &quot;&amp;Coins</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
