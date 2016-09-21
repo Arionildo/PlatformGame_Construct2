@@ -30,12 +30,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/Tiles/" />
+        <folder expanded="1" path="animation-folder/GroundSolid/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/PlayerBox/" />
         <folder expanded="1" path="animation-folder/EnemySnail/" />
         <folder expanded="1" path="animation-folder/Waypoint/" />
         <folder expanded="1" path="animation-folder/Tiles2/" />
         <folder expanded="1" path="animation-folder/Coin/" />
+        <folder expanded="1" path="animation-folder/GroundJumpThru/" />
+        <folder expanded="1" path="animation-folder/GroundThru/" />
     </folders-expanded>
 </c2uistate>
