@@ -73,5 +73,90 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="800486881920605">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="660004973497503" type="BumbleBee">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;right&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="768196401155633" type="BumbleBee">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="274180707585678" type="BumbleBee">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="779741138904345">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="131975738063950" type="BumbleBee">
+                    <param id="0" name="Instance variable">action</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;left&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="332091996308480" type="BumbleBee">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="7" name="Set mirrored" sid="487373753610062" type="BumbleBee">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="735939930208052">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="513174666446280" type="BumbleBee">
+                    <param id="0" name="Object">Waypoint</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="316223237972253">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="959748639291821" type="BumbleBee">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;right&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="376504984465747" type="BumbleBee">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;left&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="903469534825540">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="798321725119794" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="248537702396671" type="BumbleBee">
+                            <param id="0" name="Instance variable">action</param>
+                            <param id="1" name="Value">&quot;right&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="877991445288883">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="950168682352078" type="BumbleBee" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="329682142671171" type="System">
+                    <param id="0" name="Seconds">5</param>
+                </action>
+                <action id="0" name="Spawn another object" sid="463830612998495" type="SpawnPoint">
+                    <param id="0" name="Object">BumbleBee</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

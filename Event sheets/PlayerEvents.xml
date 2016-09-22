@@ -185,6 +185,43 @@
                 </event-block>
             </sub-events>
         </event-block>
+        <event-block sid="452723975282210">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="619466892853450" type="PlayerBox">
+                    <param id="0" name="Object">BumbleBee</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="172281285846952">
+                    <conditions>
+                        <condition behavior="Platform" id="4" name="Is falling" sid="518256313843073" type="PlayerBox" />
+                        <condition id="-2" name="Compare Y" sid="178866747190372" type="PlayerBox">
+                            <param id="0" name="Comparison">2</param>
+                            <param id="1" name="Y co-ordinate">EnemySnail.Y</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="729143194826928" type="BumbleBee" />
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="904735059136278" type="PlayerBox">
+                            <param id="0" name="Vector Y">-1000</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="225468896168974">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="646675735321981" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Flash" id="0" name="Flash" sid="364637347194045" type="Player">
+                            <param id="0" name="&apos;On&apos; time">0.1</param>
+                            <param id="1" name="&apos;Off&apos; time">0.1</param>
+                            <param id="2" name="Duration">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
         <event-block sid="8030008175312833">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="1038293846850741" type="PlayerBox">
